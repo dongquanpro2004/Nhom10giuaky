@@ -1,0 +1,438 @@
+/* --- BIẾN MÀU SẮC VÀ FONT CHỮ --- */
+:root {
+    --bg-color: #121212;
+    --primary-color: #1a1a1a;
+    --secondary-color: #242424;
+    --text-color: #e0e0e0;
+    --accent-color: #2ecc71; /* Xanh lá cây */
+    --accent-hover-color: #27ae60;
+    --font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* --- RESET & CÀI ĐẶT CHUNG --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+
+    /* DÒNG MỚI THÊM VÀO ĐỂ TẠO ANIMATION */
+    animation: slideUpFadeIn 1s ease-out forwards;
+}
+
+h1, h2, h3, h4 { /* Thêm h4 */
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover-color);
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 10%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.logo:hover {
+    color: var(--accent-color); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+
+/* --- ABOUT SECTION --- */
+#about {
+    background-color: var(--primary-color);
+    padding-top: 100px; /* Thêm padding top vì header fixed và không còn hero section */
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    flex-shrink: 0;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+}
+
+.about-text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.about-text strong {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* --- FAVOURITE SECTION --- */
+#favourite {
+    background-color: var(--bg-color); /* Nền xen kẽ 1 */
+}
+
+.favourite-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.favourite-item {
+    background-color: var(--secondary-color);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.favourite-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.favourite-item i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.favourite-item h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+/* --- SKILLS SECTION --- */
+#skills {
+    background-color: var(--primary-color); /* THAY ĐỔI (từ bg-color) */
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills-column {
+    width: 100%;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.skill-progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 6px;
+}
+
+/* --- ACHIEVEMENTS SECTION --- */
+#achievements {
+    background-color: var(--bg-color); /* THAY ĐỔI (từ primary-color) */
+}
+
+.achievement-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-color);
+}
+
+.achievement-item i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-right: 20px;
+}
+
+.achievement-text h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.achievement-text p {
+    color: var(--text-color);
+}
+
+
+/* --- PROJECTS SECTION --- */
+#projects {
+    background-color: var(--primary-color); /* THAY ĐỔI (từ bg-color) */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    padding: 20px 20px 10px 20px;
+    color: var(--accent-color);
+}
+
+.project-card p {
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.project-tech {
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tech span {
+    background-color: #333;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.project-card .btn {
+    margin: 20px;
+    text-align: center;
+}
+
+.project-card .btn.disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* --- CONTACT SECTION --- */
+#contact {
+    background-color: var(--bg-color); /* THAY ĐỔI (từ primary-color) */
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+}
+
+.contact-info a i {
+    margin-right: 8px;
+    color: var(--accent-color);
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color); /* THAY ĐỔI (từ bg-color) */
+    border-top: 1px solid var(--secondary-color);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* Thêm responsive cho sở thích */
+    .favourite-grid {
+        grid-template-columns: 1fr 1fr; /* 2 cột trên mobile */
+    }
+
+    
+    
+}
+
+/* --- KEYFRAMES CHO ANIMATION MỞ TRANG (MỚI THÊM) --- */
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

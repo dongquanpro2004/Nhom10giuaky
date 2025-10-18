@@ -1,0 +1,193 @@
+/* --- BIẾN MÀU SẮC (DẢI NGÂN HÀ - ĐEN TÍM HỒNG) --- */
+:root {
+    --bg-color: #0d001a;           /* Nền rất tối, hơi tím */
+    --primary-color: rgba(25, 0, 50, 0.6); /* Nền thẻ mờ ảo, tím đậm */
+    --secondary-color: rgba(35, 0, 70, 0.7); /* Màu thứ cấp, đậm hơn */
+    --text-color: #e0e0e0;         /* Màu chữ sáng, dễ đọc */
+    --accent-color: #ff69b4;       /* Hồng rực rỡ (Hot Pink) */
+    --accent-hover-color: #e64a9b; /* Hồng đậm hơn khi hover */
+    --gradient-color-1: #4b0082;   /* Tím đậm (Indigo) */
+    --gradient-color-2: #8a2be2;   /* Tím xanh (Blue Violet) */
+    --font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* --- RESET & CÀI ĐẶT CHUNG --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    /* Nền gradient chuyển động mờ ảo */
+    background: radial-gradient(circle at top left, var(--gradient-color-1), var(--bg-color), var(--gradient-color-2) 80%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    /* Căn giữa toàn bộ nội dung */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Thêm padding cho màn hình nhỏ */
+}
+
+/* Hiệu ứng chuyển động cho nền dải ngân hà */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1, h3 {
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+/* --- STYLE TRANG CHỦ --- */
+.team-container {
+    max-width: 1200px;
+    width: 100%; /* Đảm bảo container chiếm đủ không gian */
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Làm mờ nhẹ phần nền phía sau */
+    background: rgba(0, 0, 0, 0.3); /* Lớp phủ đen trong suốt */
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.2); /* Bóng đổ ảo diệu */
+    border: 1px solid rgba(255, 105, 180, 0.1);
+}
+
+.team-container h1 {
+    font-size: 3rem;
+    color: var(--accent-color); /* Tiêu đề chính màu hồng */
+    text-shadow: 0 0 10px var(--accent-color); /* Tạo hiệu ứng phát sáng */
+    margin-bottom: 20px;
+}
+
+.team-container .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 60px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+/* --- LƯỚI THÀNH VIÊN --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Giữ nguyên 5 cột */
+    gap: 30px;
+}
+
+/* --- THẺ THÀNH VIÊN (CARD) --- */
+.member-card {
+    background: var(--primary-color); /* Nền thẻ mờ */
+    border-radius: 15px; /* Bo tròn nhiều hơn */
+    overflow: hidden;
+    border: 1px solid rgba(255, 105, 180, 0.3); /* Viền mờ ảo */
+    text-align: center; /* Căn giữa nội dung trong thẻ */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Bóng đổ sâu hơn */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    backdrop-filter: blur(3px); /* Làm mờ nhẹ bên trong thẻ */
+}
+
+.member-card:hover {
+    transform: translateY(-15px) scale(1.03); /* Nhấn nhá hơn khi hover */
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3); /* Bóng đổ nổi bật */
+    border-color: var(--accent-color); /* Viền hồng khi hover */
+}
+
+/* --- ẢNH THÀNH VIÊN (HÌNH VUÔNG) --- */
+.member-image-link {
+    display: block;
+    width: 100%;
+    padding-bottom: 100%; /* Tạo tỷ lệ 1:1 cho hình vuông */
+    position: relative;
+    overflow: hidden; 
+}
+
+.member-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(0.8) grayscale(0.2); /* Làm mờ và hơi xám ảnh */
+}
+
+.member-image-link:hover .member-image {
+    transform: scale(1.1); /* Phóng to hơn khi hover */
+    filter: brightness(1) grayscale(0); /* Ảnh sáng rõ hơn khi hover */
+}
+
+/* --- NỘI DUNG THẺ --- */
+.member-content {
+    padding: 20px;
+}
+
+.member-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px; /* Tăng khoảng cách dưới tên (vì đã bỏ vai trò) */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+/* --- NÚT BẤM (BUTTON) --- */
+.btn {
+    display: inline-block; 
+    text-align: center;
+    background: linear-gradient(45deg, var(--accent-color), #ff007f); /* Gradient hồng */
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px; /* Bo tròn nút hình con nhộng */
+    font-weight: 500;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4); /* Bóng đổ nút */
+    border: none;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #e64a9b, var(--accent-color));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
+}
+
+/* --- RESPONSIVE DESIGN (Rất quan trọng) --- */
+@media (max-width: 1200px) {
+    .team-grid {
+        /* Cho phép 3-4 cột */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        padding: 30px 20px;
+    }
+    .team-container h1 {
+        font-size: 2.2rem;
+    }
+    .team-container .subtitle {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+    .team-grid {
+        /* Cho phép 2 cột */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    .member-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
