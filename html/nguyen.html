@@ -4,187 +4,404 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hồ Đăng Nguyên - Data Science Portfolio</title>
-    <link rel="stylesheet" href="../css/style-nguyen.css">
+    <title>Hồ Đăng Nguyên - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="../css/nguyen-css.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">
-            <a href="../index.html">Quay lại trang chủ</a>
+    <!-- Animated overlay (decorative, pointer-events: none) -->
+    <div class="page-overlay" aria-hidden="true">
+        <span class="bubble" style="--x:10%; --y:20%; --s:180px; --d:0s;"></span>
+        <span class="bubble" style="--x:85%; --y:75%; --s:240px; --d:3s;"></span>
+        <span class="bubble" style="--x:50%; --y:40%; --s:140px; --d:6s;"></span>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">Quay về</a>
+            <nav>
+                <a href="#home"><span class="nav-icon" aria-hidden="true"><img src="../img/img-nguyen/icons/home.png" alt=""
+                            width="18"></span> <span class="nav-text">Trang Chủ</span></a>
+                <a href="#about"><span class="nav-icon" aria-hidden="true"><img src="../img/img-nguyen/icons//user.png" alt=""
+                            width="18"></span> <span class="nav-text">Giới Thiệu</span></a>
+                <a href="#skills"><span class="nav-icon" aria-hidden="true"><img src="../img/img-nguyen/icons/skills.png" alt=""
+                            width="18"></span> <span class="nav-text">Kỹ Năng</span></a>
+                <a href="#certificates"><span class="nav-icon" aria-hidden="true"><img src="../img/img-nguyen/icons/certificate.png"
+                            alt="" width="18"></span> <span class="nav-text">Chứng Chỉ</span></a>
+                <a href="#projects"><span class="nav-icon" aria-hidden="true"><img src="../img/img-nguyen/icons/projects.png" alt=""
+                            width="18"></span> <span class="nav-text">Dự Án</span></a>
+                <a href="#contact"><span class="nav-icon" aria-hidden="true"><img src="../img/img-nguyen/icons/contact.png" alt=""
+                            width="18"></span><span class="nav-text">Liên Hệ</span></a>
+            </nav>
         </div>
-        <ul>
-            <li><a href="#home">Trang Chủ</a></li>
-            <li><a href="#about">Giới Thiệu</a></li>
-            <li><a href="#skills">Kỹ Năng</a></li>
-            <li><a href="#projects">Dự Án</a></li>
-            <li><a href="#contact">Liên Hệ</a></li>
-        </ul>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Hồ Đăng Nguyên</h1>
-                <p>Sinh viên chuyên ngành Data Science</p>
-                <p style="font-size: 1rem; color: var(--text-secondary);">Chào mọi người, mình là Hồ Đăng Nguyên, và
-                    mình là sinh viên chuyên ngành Khoa học Dữ liệu tại Trường Đại học Giao thông Vận tải. Ngành này với
-                    mình như một trò chơi xếp hình lớn, nơi mình phải tìm ra những mảnh ghép ý nghĩa từ hàng núi dữ
-                    liệu. Mình đặc biệt thích dùng Python và Machine Learning để giải quyết các vấn đề thực tế—kiểu như
-                    giúp các cửa hàng hiểu khách hàng muốn gì, hay dự đoán xu hướng thị trường,...
-                    Nếu bạn có bất kỳ ý tưởng dự án hay hoài bão nào liên quan đến dữ liệu, đừng ngần ngại nhắn cho mình
-                    nhé! Rất vui được làm quen với mọi người!</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">Xem Dự Án</a>
-                    <a href="#contact" class="btn btn-secondary">Liên Hệ Tôi</a>
+                <div class="typewriter">Data Analyst - Data Scientist - ML Engineer</div>
+                <p class="intro-text">
+                    Xin chào! Mình là Hồ Đăng Nguyên, sinh viên ngành khoa học dữ liệu tại trường Đại Học Giao Thông Vận
+                    Tải TP. HCM, trang web này là nơi mình chia sẻ về các dự án, kỹ năng và kinh nghiệm của mình trong
+                    lĩnh vực phân tích và khoa học dữ liệu.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Xem Dự Án</a>
+                    <a href="#contact" class="btn">Liên Hệ Tôi</a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="../img/profile-nguyen.jpg" alt="Hồ Đăng Nguyên" style="width: 100%; height: 100%;">
-                </div>
+                <img src="../img/img-nguyen/images/nguyen-img1.jpg" alt="Ho Dang Nguyen">
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
-        <h2 class="section-title">Về Tôi</h2>
+    <section id="about">
+        <h2>Giới Thiệu</h2>
         <div class="about-content">
             <div class="about-text">
-                <h3>Sở thích</h3>
-                <p>Bên cạnh những con số và thuật toán, mình là một người yêu thích vận động. Mình thường xuyên tập gym
-                    để giữ cho đầu óc và cơ thể luôn ở trạng thái tốt nhất. Ngoài ra, chơi các môn thể thao là cách mình
-                    xả stress tuyệt vời. Mình tin rằng, việc cân bằng giữa sự tập trung cao độ khi phân tích dữ liệu và
-                    năng lượng dồi dào từ thể thao giúp mình học tập và làm việc hiệu quả hơn rất nhiều.</p>
-                <h3>Nghề nghiệp định hướng</h3>
-                <p>Mình đang hướng tới việc trở thành một Data Analytics trong tương lai, với mục tiêu áp dụng các kỹ năng như: Machine Learning, Trực quan hóa dữ liệu, và Phân tích thống kê để giúp các tổ chức đưa ra quyết định dựa trên dữ liệu một cách hiệu quả hơn.</p>
-                <p><strong>Trường:</strong> UTH University</p>
+                <p>
+                    Mình tên là Hồ Đăng Nguyên, sinh năm 2004, mình đến từ Bình Thuận, đang thuộc biên chế lớp DL22CLC
+                    chuyên ngành Khoa học Dữ liệu, mình có niềm đam mê với việc khám phá và phân tích dữ liệu để
+                    rút ra những thông tin có ý nghĩa.
+                </p>
+                <p>
+                    Trong quá trình học, mình đã thực hành với các công cụ như Power BI, Tableau, SQL, Python và Excel,
+                    giúp mình hiểu rõ hơn về quy trình xử lý và trực quan hóa dữ liệu.
+                </p>
+                <p>
+                    Ngoài ra, mình có sở thích thể thao và tập gym, vì mình tin rằng một cơ thể khỏe mạnh sẽ giúp duy
+                    trì tinh thần tốt và hiệu suất cao trong học tập cũng như công việc.
+                </p>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Dự Án Hoàn Thành</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Chứng chỉ cá nhân</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3.5</div>
+                        <div class="stat-label">Điểm GPA</div>
+                    </div>
+                </div>
             </div>
             <div class="about-image">
-                <img src="../img/avt-nguyen.jpg" alt="Về Tôi" style="width: 400px; height: 400px;">
+                <img src="../img/img-nguyen/images/nguyen-img2.jpg" alt="Ho Dang Nguyen">
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="skills-container">
-            <h2 class="section-title">Kỹ Năng</h2>
-            <div class="carousel-wrapper">
-                <button class="carousel-button prev" id="prevBtn">❮</button>
-                <div class="carousel-container">
-                    <div class="skills-carousel" id="skillsCarousel">
-                        <div class="skill-card">
-                            <h4>📊 Phân Tích Dữ Liệu</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Pandas</span>
-                                <span class="tag">SQL</span>
-                                <span class="tag">Excel</span>
-                            </div>
+    <section id="skills">
+        <h2>Kỹ Năng</h2>
+        <div class="skills-grid">
+            <div class="skill-card stagger-item">
+                <h3>📊 Business Intelligence</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Power BI</span>
+                            <span class="skill-percentage">95%</span>
                         </div>
-                        <div class="skill-card">
-                            <h4>🤖 Machine Learning</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Scikit-learn</span>
-                                <span class="tag">TensorFlow</span>
-                                <span class="tag">Deep Learning</span>
-                                <span class="tag">NLP</span>
-                            </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%;"></div>
                         </div>
-                        <div class="skill-card">
-                            <h4>📈 Trực Quan Hóa</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Matplotlib</span>
-                                <span class="tag">Seaborn</span>
-                                <span class="tag">Plotly</span>
-                                <span class="tag">Power BI</span>
-                            </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Tableau</span>
+                            <span class="skill-percentage">90%</span>
                         </div>
-                        <div class="skill-card">
-                            <h4>💻 Lập Trình</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">R</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Git</span>
-                            </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
                         </div>
-                        <div class="skill-card">
-                            <h4>🗄️ Cơ Sở Dữ Liệu</h4>
-                            <div class="skill-tags">
-                                <span class="tag">MySQL</span>
-                                <span class="tag">PostgreSQL</span>
-                                <span class="tag">MongoDB</span>
-                                <span class="tag">BigQuery</span>
-                            </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Looker Studio</span>
+                            <span class="skill-percentage">85%</span>
                         </div>
-                        <div class="skill-card">
-                            <h4>☁️ Cloud & Tools</h4>
-                            <div class="skill-tags">
-                                <span class="tag">AWS</span>
-                                <span class="tag">Google Cloud</span>
-                                <span class="tag">Docker</span>
-                                <span class="tag">Jupyter</span>
-                            </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
                         </div>
-                    </div>
-                </div>
-                <button class="carousel-button next" id="nextBtn">❯</button>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Dashboard Design</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 92%;"></div>
+                        </div>
+                    </li>
+                </ul>
             </div>
+            <div class="skill-card stagger-item">
+                <h3>💾 Database & SQL</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>SQL Server</span>
+                            <span class="skill-percentage">93%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 93%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>MySQL</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>PostgreSQL</span>
+                            <span class="skill-percentage">87%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 87%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Data Modeling</span>
+                            <span class="skill-percentage">91%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 91%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill-card stagger-item">
+                <h3>🐍 Programming</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span class="skill-percentage">94%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 94%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Pandas & NumPy</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 92%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Scikit-learn</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Data Visualization</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill-card stagger-item">
+                <h3>📈 Statistical Analysis</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Descriptive Statistics</span>
+                            <span class="skill-percentage">91%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 91%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Hypothesis Testing</span>
+                            <span class="skill-percentage">89%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 89%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Regression Analysis</span>
+                            <span class="skill-percentage">87%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 87%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Time Series</span>
+                            <span class="skill-percentage">86%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 86%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2>Chứng Chỉ</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card stagger-item">
+                <div class="certificate-image">
+                    <img src="../img/img-nguyen/images/nguyen-img3.jpg" alt="Google Analytics Certification">
+                </div>
+                <div class="certificate-content">
+                    <h3>Google Analytics Certification</h3>
+                    <p>Chứng chỉ chuyên gia phân tích web từ Google</p>
+                    <span class="cert-date">2025</span>
+                </div>
+            </div>
+            <div class="certificate-card stagger-item">
+                <div class="certificate-image">
+                    <img src="../img/img-nguyen/images/nguyen-img4.jpg" alt="Power BI Certification">
+                </div>
+                <div class="certificate-content">
+                    <h3>Power BI Data Analyst</h3>
+                    <p>Chứng chỉ chuyên gia phân tích dữ liệu Power BI</p>
+                    <span class="cert-date">2025</span>
+                </div>
+            </div>
+            <div class="certificate-card stagger-item">
+                <div class="certificate-image">
+                    <img src="../img/img-nguyen/images/nguyen-img5.jpg" alt="Python for Data Science">
+                </div>
+                <div class="certificate-content">
+                    <h3>Python for Data Science</h3>
+                    <p>Chứng chỉ chuyên gia lập trình Python cho khoa học dữ liệu</p>
+                    <span class="cert-date">2024</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="projects-container">
-            <h2 class="section-title">Dự Án Nổi Bật</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="../img/project1-nguyen.jpg" alt="Dự Án 1" style="width: 100%; height: 200px;">
-                    </div>
-                    <div class="project-content">
-                        <h3>Dự Báo Giá Nhà</h3>
-                        <p>Xây dựng mô hình machine learning để dự báo giá bất động sản dựa trên các đặc trưng của bất
-                            động sản.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Regression</span>
-                            <span class="tag">Scikit-learn</span>
-                        </div>
+    <section id="projects">
+        <h2>Dự Án</h2>
+        <div class="projects-grid">
+            <div class="project-card stagger-item">
+                <div class="project-image" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="../img/img-nguyen/images/nguyen-img6.jpg" alt="Titanic Survival" />
+                </div>
+                <div class="project-content">
+                    <h3>Titanic Survival Analysis</h3>
+                    <p>Phân tích dữ liệu hành khách Titanic: tiền xử lý, trực quan hóa và mô hình đơn giản để dự đoán
+                        khả năng sống sót.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">scikit-learn</span>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="../img/project2-nguyen.jpg" alt="Dự Án 2" style="width: 100%; height: 200px;">
-                    </div>
-                    <div class="project-content">
-                        <h3>Hệ thống cảnh báo buồn ngủ khi lái xe</h3>
-                        <p>Ứng dụng học sâu để tinh chỉnh mô hình có sẵn để phục vụ việc xây dựng mô hình cảnh báo buồn ngủ khi lái xe</p>
-                        <div class="project-tags">
-                            <span class="tag">CNN</span>
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Python</span>
-                        </div>
+            </div>
+
+            <div class="project-card stagger-item">
+                <div class="project-image" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="../img/img-nguyen/images/nguyen-img7.jpg" alt="Movie Ratings EDA" />
+                </div>
+                <div class="project-content">
+                    <h3>Movie Ratings EDA</h3>
+                    <p>Khám phá tập dữ liệu đánh giá phim: phân tích thể loại, điểm số trung bình và xu hướng theo năm.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">EDA</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Matplotlib</span>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="../img/project3-nguyen.jpg" alt="Dự Án 3" style="width: 100%; height: 200px;">
+            </div>
+
+            <div class="project-card stagger-item">
+                <div class="project-image" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="../img/img-nguyen/images/nguyen-img8.jpg" alt="Sales Forecast" />
+                </div>
+                <div class="project-content">
+                    <h3>Simple Sales Forecast</h3>
+                    <p>Dự báo doanh số hàng tháng bằng hồi quy tuyến tính và kiểm tra với train/test split; đánh giá
+                        bằng MAE/RMSE.</p>
+                    <div class="project-tags">
+                        <span class="tag">Time Series</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Phân Tích Dữ Liệu Bán Hàng</h3>
-                        <p>Phân tích chi tiết dữ liệu bán hàng để tìm ra xu hướng, mô hình mua sắm và tối ưu hóa chiến
-                            lược kinh doanh.</p>
-                        <div class="project-tags">
-                            <span class="tag">SQL</span>
-                            <span class="tag">Analytics</span>
-                            <span class="tag">Visualization</span>
-                        </div>
+                </div>
+            </div>
+
+            <div class="project-card stagger-item">
+                <div class="project-image" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="../img/img-nguyen/images/nguyen-img9.png" alt="Customer Segmentation" />
+                </div>
+                <div class="project-content">
+                    <h3>Customer Segmentation (K-means)</h3>
+                    <p>Phân cụm khách hàng bằng K-means, trực quan hóa clusters và phân tích các đặc trưng chính.</p>
+                    <div class="project-tags">
+                        <span class="tag">Clustering</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card stagger-item">
+                <div class="project-image" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="../img/img-nguyen/images/nguyen-img10.jpg" alt="COVID Trend" />
+                </div>
+                <div class="project-content">
+                    <h3>COVID-19 Trend Analysis</h3>
+                    <p>Phân tích xu hướng ca nhiễm theo quốc gia, trực quan hóa và tính các chỉ số tăng/giảm hàng tuần.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Visualization</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card stagger-item">
+                <div class="project-image" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="../img/img-nguyen/images/nguyen-img11.jpg" alt="Data Cleaning EDA" />
+                </div>
+                <div class="project-content">
+                    <h3>Data Cleaning & EDA</h3>
+                    <p>Thực hành làm sạch dữ liệu (missings, outliers), sau đó thực hiện phân tích khám phá và trực quan
+                        hóa.</p>
+                    <div class="project-tags">
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Visualization</span>
                     </div>
                 </div>
             </div>
@@ -192,165 +409,167 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <h2 class="section-title">Liên Hệ</h2>
-            <div class="contact-content">
-                <p>Tôi luôn sẵn sàng để thảo luận về các dự án mới, cơ hội hợp tác hoặc bất kỳ câu hỏi nào. Hãy liên hệ
-                    với tôi!</p>
-                <div class="contact-links">
-                    <button class="contact-link" data-type="email" data-value="22H1320023@ut.edu.vn">Email</button>
-                    <button class="contact-link" data-type="github" data-value="https://github.com/nguyendzdp1">
-                        GitHub</button>
-                    <button class="contact-link" data-type="phone" data-value="0961018471">Điện Thoại</button>
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Thông Tin Liên Hệ</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-text">
+                        <p><strong>Email</strong></p>
+                        <a href="mailto:ho.dangnguyen@email.com">nguyenhd.info@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-text">
+                        <p><strong>Điện Thoại</strong></p>
+                        <a href="tel:+84123456789">+84 96 1018 471</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <p><strong>Địa Chỉ</strong></p>
+                        <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">in</a>
+                    <a href="#" class="social-link" title="GitHub">⚙️</a>
+                    <a href="#" class="social-link" title="Twitter">𝕏</a>
+                    <a href="#" class="social-link" title="Facebook">f</a>
                 </div>
             </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Tên Của Bạn</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tin Nhắn</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary" style="width: 100%;">Gửi Tin Nhắn</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Hồ Đăng Nguyên - Data Science - UTH University. </p>
+        <p>&copy; 2025 Ho Dang Nguyen - Data Analyst Portfolio. All rights reserved.</p>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTopBtn" title="Lên đầu trang">↑</button>
-
     <script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Typewriter effect
+        const typewriterElements = document.querySelectorAll('.typewriter');
+        typewriterElements.forEach(el => {
+            const text = el.textContent;
+            el.setAttribute('data-text', text);
+        });
+
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         });
 
-        // Fade in animation on scroll
+        // Stagger animation on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
         };
 
         const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    setTimeout(() => {
+                        entry.target.style.animation = `staggerFadeIn 0.6s ease-out forwards`;
+                    }, index * 100);
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.skill-card, .project-card').forEach(el => {
-            el.classList.add('fade-in');
-            observer.observe(el);
+        document.querySelectorAll('.stagger-item').forEach(item => {
+            observer.observe(item);
         });
 
-        // Carousel functionality
-        const carousel = document.getElementById('skillsCarousel');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        let currentIndex = 0;
-
-        function getCardsPerView() {
-            const width = window.innerWidth;
-            if (width < 768) return 1;
-            if (width < 1024) return 2;
-            return 3;
-        }
-
-        function updateCarousel() {
-            const cardsPerView = getCardsPerView();
-            const cards = carousel.querySelectorAll('.skill-card');
-            const maxIndex = Math.max(0, cards.length - cardsPerView);
-            currentIndex = Math.min(currentIndex, maxIndex);
-
-            const offset = -currentIndex * (100 / cardsPerView);
-            carousel.style.transform = `translateX(${offset}%)`;
-        }
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = Math.max(0, currentIndex - 1);
-            updateCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-            const cardsPerView = getCardsPerView();
-            const cards = carousel.querySelectorAll('.skill-card');
-            const maxIndex = Math.max(0, cards.length - cardsPerView);
-            currentIndex = Math.min(currentIndex + 1, maxIndex);
-            updateCarousel();
-        });
-
-        // Update on window resize
-        window.addEventListener('resize', updateCarousel);
-
-        // Initial update
-        updateCarousel();
-
-        // Contact button functionality with toast notifications
-        const contactLinks = document.querySelectorAll('.contact-link');
-
-        contactLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const type = this.getAttribute('data-type');
-                const value = this.getAttribute('data-value');
-
-                // Copy to clipboard
-                navigator.clipboard.writeText(value).then(() => {
-                    showToast(`✓ ${getContactLabel(type)} đã được sao chép!`, 'success');
-                }).catch(() => {
-                    showToast(`${getContactLabel(type)}: ${value}`, 'success');
-                });
+        // Mouse tracking for skill cards
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', x + 'px');
+                card.style.setProperty('--mouse-y', y + 'px');
             });
         });
 
-        function getContactLabel(type) {
-            const labels = {
-                email: 'Email',
-                linkedin: 'LinkedIn',
-                github: 'GitHub',
-                phone: 'Số điện thoại'
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã gửi tin nhắn! Tôi sẽ liên hệ với bạn sớm.');
+            e.target.reset();
+        });
+
+        // Scrollspy: highlight nav links when corresponding section is in view
+        (function () {
+            const navLinks = Array.from(document.querySelectorAll('header nav a'));
+            const sections = navLinks
+                .map(a => document.querySelector(a.getAttribute('href')))
+                .filter(Boolean);
+
+            if (!sections.length) return;
+
+            const spyOptions = {
+                root: null,
+                rootMargin: '0px 0px -40% 0px', // trigger when section is mostly in view
+                threshold: 0
             };
-            return labels[type] || type;
-        }
 
-        function showToast(message, type = 'success') {
-            const toast = document.createElement('div');
-            toast.className = `toast ${type}`;
-            toast.textContent = message;
-            document.body.appendChild(toast);
+            const onIntersect = (entries) => {
+                entries.forEach(entry => {
+                    const id = entry.target.id;
+                    const link = document.querySelector(`header nav a[href="#${id}"]`);
+                    if (!link) return;
+                    if (entry.isIntersecting) {
+                        // remove active from others and set on this
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+                    } else {
+                        // if leaving and this link is active, remove it
+                        if (link.classList.contains('active')) {
+                            link.classList.remove('active');
+                        }
+                    }
+                });
+            };
 
-            // Auto remove after 3 seconds
-            setTimeout(() => {
-                toast.classList.add('hide');
-                setTimeout(() => {
-                    toast.remove();
-                }, 400);
-            }, 3000);
-        }
-
-        // Back to Top Button Functionality
-        const backToTopBtn = document.getElementById('backToTopBtn');
-
-        // Show/hide button based on scroll position
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
-
-        // Smooth scroll to top
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+            const observer = new IntersectionObserver(onIntersect, spyOptions);
+            sections.forEach(s => observer.observe(s));
+        })();
     </script>
 </body>
 

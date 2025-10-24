@@ -4,222 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lê Trung Khôi - Data Science Portfolio</title>
-    <link rel="stylesheet" href="../css/style-khoi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/khoi-css.css">
+
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
-        <a href="../index.html" class="logo">Quay lại trang chủ</a>
+        <a href="#about" class="logo">Quay lại trang chủ</a>
 
-        
-        <ul>
-        <li><a href="#home"><strong>Home</strong></a></li>
-        <li><a href="#aboutme"><strong>About Me</strong></a></li>
-        <li><a href="#skills"><strong>Skills</strong></a></li>
-        <li><a href="#projects"><strong>Projects</strong></a></li>
-        <li><a href="#interests"><strong>Interests</strong></a></li>
-        <li><a href="#contact"><strong>Contact</strong></a></li>
-
-            <li><button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙</button></li>
-        </ul>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-item"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-item"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-item"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#interests" class="nav-item"><i class="fas fa-heart"></i> Interests</a></li>
+                <li><a href="#contact" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+        <button id="themeToggle">🌙</button>
     </nav>
 
-    <section class="hero" id="home">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Lê Trung Khôi</span></h1>
-            <p>A passionate Data Science student creating intelligent solutions through data analysis and machine learning. Specialized in predictive modeling, statistical analysis, and data visualization to transform raw data into actionable insights.</p>
-            <div class="cta-buttons">
-        
-        
-            </div>
+            <h1>Lê Trung Khôi</h1>
+            <p>Data Science & Machine Learning Enthusiast</p>
+            <p>Passionate about transforming data into actionable insights and building intelligent systems.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
         <div class="hero-visual">
-            <img src="../img/avt-khoi.jfif" alt="Lê Trung Khôi" class="profile-image">
-            <div class="social-icons">
-                <a href="https://facebook.com/khoile" target="_blank" class="social-icon" title="Facebook">f</a>
-                <a href="https://github.com/khoile-ds" target="_blank" class="social-icon" title="GitHub">⚙</a>
-                <a href="mailto:letrungkhoi0812@gmail.com" class="social-icon" title="Gmail">✉</a>
-            </div>
+            <img src="../img/img-khoi/khoi.jfif" alt="Profile" class="profile-img">
+        <div class="social-links">
+
+
+            <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:youremail@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
 
-    <section class="aboutme" id="aboutme">
-        <div class="about-left">
-            <h2>About Me</h2>
-            <p class="title">Data Science Student</p>
-            <p class="bio">Passionate about transforming raw data into actionable insights through machine learning and statistical analysis.</p>
-            
-            
-            
-        </div>
-
-        <div class="about-right">
-            <div class="about-content">
-                <p>I'm a Data Science student with a strong passion for transforming raw data into actionable insights. With a solid foundation in statistics, programming, and machine learning, I'm dedicated to solving complex problems through data-driven approaches and innovative solutions.</p>
-                
-                <p>I have completed coursework in Statistical Analysis, Machine Learning, Data Mining, Big Data Technologies, and Advanced Python Programming. My projects showcase my ability to work with real-world datasets, implement sophisticated algorithms, and develop practical solutions using Python, SQL, and various ML frameworks.</p>
-                
-                <p>My goal is to become a skilled Data Scientist who can bridge the gap between business needs and technical solutions, creating measurable value through intelligent data analysis, predictive modeling, and strategic insights that drive business growth.</p>
-
-                <div class="about-highlights">
-                    <h3>Personal Information</h3>
-                    <div class="highlights-list">
-                        <div class="highlight-item"><strong>Full Name:</strong> Le Trung Khoi</div>
-                        <div class="highlight-item"><strong>Date of Birth:</strong> 08-12-2004</div>
-                        <div class="highlight-item"><strong>Hometown:</strong> Ho Chi Minh City</div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate data scientist with expertise in machine learning, data analysis, and visualization. With a strong foundation in Python and SQL, I transform complex datasets into meaningful insights.</p>
+                <p>My journey in data science has equipped me with skills in predictive modeling, statistical analysis, and data-driven decision making. I'm committed to continuous learning and staying updated with the latest technologies.</p>
+            </div>
+            <div id="flipCard" class="flip-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-front">
+                        <h3>Personal Information</h3>
+                        <p><strong>Location:</strong> Vietnam</p>
+                        <p><strong>Email:</strong> letrungkhoi0812@gmail.com</p>
+                        <p><strong>Experience:</strong> 3+ Years</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--primary-color);">Hover to see Key Expertise →</p>
                     </div>
-                </div>
-
-                <div class="about-highlights">
-                    <h3>Key Expertise</h3>
-                    <div class="highlights-list">
-                        <div class="highlight-item">Machine Learning & Predictive Modeling</div>
-                        <div class="highlight-item">Statistical Analysis & Data Mining</div>
-                        <div class="highlight-item">Python, SQL & Big Data Technologies</div>
-                        <div class="highlight-item">Data Visualization & Business Intelligence</div>
-                        <div class="highlight-item">Problem-Solving & Critical Thinking</div>
+                    <div class="flip-card-back">
+                        <h3>Key Expertise</h3>
+                        <p><strong>Machine Learning:</strong> Classification, Regression, Clustering</p>
+                        <p><strong>Tools:</strong> Python, TensorFlow, Scikit-learn</p>
+                        <p><strong>Specialization:</strong> Computer Vision, NLP</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="skills" id="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-container">
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
             <div class="skill-item">
-                <div class="skill-name">
-                    <span>Python</span>
+                <div class="skill-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="skill-icon">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress-width: 95%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4492/4492311.png" alt="SQL" class="skill-icon">
+                    <span class="skill-name">SQL</span>
                     <span class="skill-percentage">90%</span>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 90%"></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress-width: 90%"></div>
                 </div>
             </div>
 
             <div class="skill-item">
-                <div class="skill-name">
-                    <span>SQL</span>
+                <div class="skill-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/8637/8637098.png" alt="Machine Learning" class="skill-icon">
+                <span class="skill-name">Machine Learning</span>
+                <span class="skill-percentage">88%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress-width: 88%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <img src="https://cdn-icons-png.freepik.com/512/6332/6332489.png" alt="Data Visualization" class="skill-icon">
+                    <span class="skill-name">Data Visualization</span>
                     <span class="skill-percentage">85%</span>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 85%"></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress-width: 85%"></div>
                 </div>
             </div>
 
             <div class="skill-item">
-                <div class="skill-name">
-                    <span>Machine Learning</span>
-                    <span class="skill-percentage">88%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 88%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-name">
-                    <span>Data Visualization</span>
+                <div class="skill-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/449px-Tensorflow_logo.svg.png" alt="TensorFlow" class="skill-icon">
+                    <span class="skill-name">TensorFlow</span>
                     <span class="skill-percentage">82%</span>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 82%"></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress-width: 82%"></div>
                 </div>
             </div>
 
             <div class="skill-item">
-                <div class="skill-name">
-                    <span>TensorFlow & Keras</span>
+                <div class="skill-header">
+                    <img src="https://cdn-icons-png.flaticon.com/256/17353/17353191.png" alt="Big Data Technologies" class="skill-icon">
+                    <span class="skill-name">Big Data</span>
                     <span class="skill-percentage">80%</span>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 80%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-name">
-                    <span>Big Data Technologies</span>
-                    <span class="skill-percentage">75%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 75%"></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="--progress-width: 80%"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="projects" id="projects">
-        <h2 class="section-title">Featured Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <h3>Student Grade Management System</h3>
-                <img src="../img/ql-khoi.png" alt="Student Grade Management System" class="project-image">
+                <img src="https://codeastro.com/wp-content/uploads/2022/06/CodeAstro-Thumbnail_Student-Grading-System-PHP-MySQL-1280x720.jpg" alt="Student Grade Management System" class="project-image">
                 <p>Developed a Python-based application to manage and analyze student grades. Implemented features for adding, editing, and calculating average scores, as well as exporting reports in CSV format. Used object-oriented programming principles to build a modular and maintainable system.</p>
                 <div class="project-tags">
-                    <span class="project-tag">Python</span>
-                    <span class="project-tag">OOP</span>
-                    <span class="project-tag">File Handling</span>
-                    <span class="project-tag">CSV</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">OOP</span>
+                    <span class="tag">File Handling</span>
+                    <span class="tag">CSV</span>
                 </div>
             </div>
 
             <div class="project-card">
-                <h3>Pygame  Keep the Ball Up Game</h3>
-                <img src="../img/pg-khoi.jpg" alt="Pygame  Keep the Ball Up Game" class="project-image">
+                <h3>Pygame Keep the Ball Up Game</h3>
+                <img src="https://i.ytimg.com/vi/4DG9RW7mKSw/maxresdefault.jpg" alt="Pygame Keep the Ball Up Game" class="project-image">
                 <p>Created an interactive 2D game using Pygame where players keep a ball in the air by controlling a paddle. Implemented physics-based movement, collision detection, and score tracking. Designed simple yet engaging gameplay with smooth animations and sound effects.</p>
                 <div class="project-tags">
-                    <span class="project-tag">Pygame</span>
-                    <span class="project-tag">Python</span>
-                    <span class="project-tag">Time Series</span>
+                    <span class="tag">Pygame</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Game Development</span>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>License Plate Recognition System</h3>
-                <img src="../img/bsx-khoi.jpg" alt="License Plate Recognition System" class="project-image">
+                <img src="https://www.pantechsolutions.net/wp-content/uploads/2021/09/license_plate_recognition_uisng_rcnn.jpg" alt="License Plate Recognition System" class="project-image">
                 <p>Developed an intelligent system for automatic vehicle license plate detection and recognition using deep learning. Implemented image preprocessing, object detection with YOLO, and character recognition using OCR. Deployed the system via a user-friendly Streamlit interface for real-time monitoring.</p>
                 <div class="project-tags">
-                    <span class="project-tag">Computer Vision</span>
-                    <span class="project-tag">YOLOv8</span>
-                    <span class="project-tag">OCR</span>
-                    <span class="project-tag">Python</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">YOLOv8</span>
+                    <span class="tag">OCR</span>
+                    <span class="tag">Python</span>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Wildlife Detection & Prediction</h3>
-                <img src="../img/dvhd-khoi.png" alt="Wildlife Detection & Prediction" class="project-image">
-                <p>Developed a computer vision system using Pygame to detect and predict wild animal species from images. Implemented real-time object detection with classification algorithms achieving 92% accuracy on wildlife datasets.</p>
+                <img src="https://learnopencv.com/wp-content/uploads/2025/03/finetuning-retinanet-wildlife-dataset.png" alt="Wildlife Detection & Prediction" class="project-image">
+                <p>Developed a computer vision system using Pygame to detect and predict wild animal species from images. Implemented real-time object detection with classification algorithms achieving 92% accuracy on wildlife datasets. Specialized in identifying endangered species for conservation efforts.</p>
                 <div class="project-tags">
-                    <span class="project-tag">YOLOv8</span>
-                    <span class="project-tag">Computer Vision</span>
-                    <span class="project-tag">EfficientNet</span>
-                    <span class="project-tag">PyTorch</span>
+                    <span class="tag">YOLOv8</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">EfficientNet</span>
+                    <span class="tag">PyTorch</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="interests" id="interests">
-        <h2 class="section-title">Personal Interests</h2>
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <h2>Personal Interests</h2>
         <div class="interests-grid">
             <div class="interest-card">
                 <div class="interest-icon">📖</div>
                 <h3>Reading</h3>
                 <p>Passionate about reading books on personal growth, technology, and science to expand knowledge and inspiration.</p>
             </div>
-
             <div class="interest-card">
                 <div class="interest-icon">🎮</div>
                 <h3>Gaming</h3>
                 <p>Enjoy exploring different genres of video games as a way to relax and enhance strategic thinking.</p>
             </div>
-
             <div class="interest-card">
                 <div class="interest-icon">🎬</div>
                 <h3>Movies</h3>
                 <p>Love watching films of various styles to appreciate storytelling, creativity, and cinematography.</p>
             </div>
-
             <div class="interest-card">
                 <div class="interest-icon">⚽</div>
                 <h3>Sports</h3>
@@ -228,46 +225,184 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <h2>Get In Touch</h2>
-        <form class="contact-form" id="contactForm">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="firstName">First name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="First name" required>
-                </div>
-                <div class="form-group">
-                    <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
-                </div>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
             </div>
-            <div class="form-row full">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
             </div>
-            <div class="form-row full">
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
             </div>
-            <div class="form-row full">
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Message" required></textarea>
-                </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
             </div>
-            <div class="form-submit">
-                <button type="submit" class="btn-submit">Submit</button>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
             </div>
+            <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Lê Trung Khôi. All rights reserved. | Data Science Student</p>
+        <p>&copy; 2025 Lê Trung Khôi. All rights reserved.</p>
     </footer>
 
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        if (currentTheme === 'light') {
+            html.classList.add('light-mode');
+            themeToggle.textContent = '☀️';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('light-mode');
+            const theme = html.classList.contains('light-mode') ? 'light' : 'dark';
+            localStorage.setItem('theme', theme);
+            themeToggle.textContent = theme === 'light' ? '☀️' : '🌙';
+        });
+
+        // Contact Form
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
+
+                const mailtoLink = `mailto:letrungkhoi0812@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(`Name: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\n\nMessage:\n${data.message}`)}`;
+                window.location.href = mailtoLink;
+
+                contactForm.reset();
+            });
+        }
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Staggered animations on load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.project-card, .interest-card, .skill-item').forEach((el, index) => {
+                el.style.animation = `smoothSlideUp 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) ${index * 0.1}s both`;
+            });
+        });
+
+        // Easing function for smooth parallax
+        function easeOutCubic(x) {
+            return 1 - Math.pow(1 - x, 3);
+        }
+
+        // Parallax effect with requestAnimationFrame
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const hero = document.querySelector('.hero-visual');
+                    if (hero) {
+                        const scrollPosition = window.pageYOffset;
+                        const normalizedScroll = Math.min(1, scrollPosition / window.innerHeight);
+                        const easedScroll = easeOutCubic(normalizedScroll);
+                        hero.style.transform = `translateY(${easedScroll * window.innerHeight * 0.2}px)`;
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Flip card on hover
+        const flipCard = document.getElementById('flipCard');
+        if (flipCard) {
+            flipCard.addEventListener('mouseenter', () => {
+                const card = flipCard.querySelector('.flip-card');
+                card.classList.add('flipped');
+            });
+
+            flipCard.addEventListener('mouseleave', () => {
+                const card = flipCard.querySelector('.flip-card');
+                card.classList.remove('flipped');
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animated skill counters
+        const animateCounters = () => {
+            const percentages = document.querySelectorAll('.skill-percentage');
+            percentages.forEach(el => {
+                const target = parseInt(el.textContent);
+                let current = 0;
+                const increment = target / 30;
+
+                const counter = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        el.textContent = target + '%';
+                        clearInterval(counter);
+                    } else {
+                        el.textContent = Math.floor(current) + '%';
+                    }
+                }, 30);
+            });
+        };
+
+        // Trigger counter animation when skills section is visible
+        const skillsSection = document.querySelector('.skills');
+        if (skillsSection) {
+            const skillsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        skillsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            skillsObserver.observe(skillsSection);
+        }
+    </script>
 </body>
 </html>

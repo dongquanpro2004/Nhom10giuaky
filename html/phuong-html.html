@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio – Nguyễn Đình Phương</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Đường dẫn CSS đã đổi tên -->
+  <link rel="stylesheet" href="../css/phuong-css.css">
+</head>
+<body>
+
+  <!-- Nút quay về trang chủ (nếu đây là trang chủ thì giữ nguyên cũng không sao) -->
+  <a class="back-home" href="../index.html" title="Về trang chủ">← Quay lại trang chủ</a>
+  <!-- Thanh tiến trình cuộn -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">NDP<span>•Portfolio</span></a>
+      <div class="nav-links">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#certs">Chứng chỉ</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container" id="home">
+    <div class="hero-media">
+      <div class="hero-slider" data-autoplay="true" data-interval="4200">
+        <button class="hero-arrow prev" aria-label="Previous">‹</button>
+        <div class="slides">
+          <figure class="slide"><img src="../img/img-phuong/hero-1.jpg" alt="Ảnh 1"></figure>
+          <figure class="slide"><img src="../img/img-phuong/hero-2.jpg" alt="Ảnh 2"></figure>
+          <figure class="slide"><img src="../img/img-phuong/hero-3.jpg" alt="Ảnh 3"></figure>
+        </div>
+        <button class="hero-arrow next" aria-label="Next">›</button>
+        <div class="slider-dots"></div>
+        <div class="hero-status">
+          <span class="dot online"></span> Sẵn sàng làm việc
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="grad">Nguyễn Đình Phương</span></h1>
+      <p class="subtitle">
+        <span id="typing" data-words='["Data Science","Digital Maketing","AI &amp; Data Enthusiast"]'></span>
+        <span class="caret">|</span>
+      </p>
+      <p class="lead">
+        Tôi là Nguyễn Đình Phương, một Data Scientist đam mê phân tích dữ
+            liệu và xây dựng các mô hình machine learning để giải quyết các vấn
+            đề thực tế.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn primary contact-btn">🚀 Xem Projects</a>
+        <a href="#contact" class="btn ghost contact-btn">✉️ Liên hệ công việc</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container">
+    <h2 class="section-title">GIỚI THIỆU</h2>
+    <div class="about-grid">
+      <div class="card aos">
+        <h3>Thông tin</h3>
+        <ul class="list">
+          <li><b>Họ tên:</b> Nguyễn Đình Phương</li>
+          <li><b>Định hướng:</b> Data Sicience / Digital Maketing</li>
+          <li><b>Địa điểm:</b> TP. Hồ Chí Minh</li>
+          <li><b>Email:</b> ndinhphuong04@gmail.com</li>
+        </ul>
+      </div>
+      <div class="card aos">
+        <h3>Mục tiêu</h3>
+        <p>Không ngừng học hỏi công nghệ mới, tối ưu hiệu năng & UX, áp dụng AI / dữ liệu để tăng giá trị cho người dùng.</p>
+      </div>
+      <div class="card aos">
+        <h3>Giá trị cốt lõi</h3>
+        <p>Sự mượt mà, tính nhất quán, dễ bảo trì – cùng tinh thần trách nhiệm trong làm việc nhóm.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="container">
+    <h2 class="section-title">KỸ NĂNG</h2>
+    <div class="skills-grid stagger">
+      <div class="skill-card card">
+        <h3>Frontend</h3>
+        <div class="skill-bar" data-label="HTML" data-level="95"></div>
+        <div class="skill-bar" data-label="CSS" data-level="90"></div>
+        <div class="skill-bar" data-label="JavaScript" data-level="85"></div>
+        <div class="skill-bar" data-label="React" data-level="80"></div>
+      </div>
+      <div class="skill-card card">
+        <h3>Backend</h3>
+        <div class="skill-bar" data-label="Python" data-level="85"></div>
+        <div class="skill-bar" data-label="FastAPI" data-level="80"></div>
+        <div class="skill-bar" data-label="Node.js" data-level="70"></div>
+        <div class="skill-bar" data-label="Django" data-level="65"></div>
+      </div>
+      <div class="skill-card card">
+        <h3>Database</h3>
+        <div class="skill-bar" data-label="MySQL" data-level="90"></div>
+        <div class="skill-bar" data-label="PostgreSQL" data-level="75"></div>
+        <div class="skill-bar" data-label="MongoDB" data-level="65"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container">
+    <h2 class="section-title">DỰ ÁN CỦA TÔI</h2>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card aos">
+        <div class="project-thumb">
+          <img src="../img/img-phuong/projects/tour.jpg" alt="TourBooking Website" loading="lazy" width="640" height="400">
+        </div>
+        <div class="project-body">
+          <h3>TourBooking Website</h3>
+          <p>Hệ thống đặt tour full-stack có quản trị, thanh toán và chat realtime.</p>
+          <div class="tags"><span>FastAPI</span><span>React</span><span>MySQL</span><span>JWT</span></div>
+          <a class="btn ghost" href="#" target="_blank" rel="noopener">Xem Code</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card aos">
+        <div class="project-thumb">
+          <img src="../img/img-phuong/projects/yolo.jpg" alt="Lane Violation Detector – YOLOv8 & OpenCV" loading="lazy" width="640" height="400">
+        </div>
+        <div class="project-body">
+          <h3>Lane Violation Detector</h3>
+          <p>Nhận diện phương tiện đi sai làn bằng YOLOv8 &amp; OpenCV.</p>
+          <div class="tags"><span>Python</span><span>OpenCV</span><span>YOLOv8</span></div>
+          <a class="btn ghost" href="#" target="_blank" rel="noopener">Xem Code</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card aos">
+        <div class="project-thumb">
+          <img src="../img/img-phuong/projects/chat.jpg" alt="Realtime Chat" loading="lazy" width="640" height="400">
+        </div>
+        <div class="project-body">
+          <h3>Realtime Chat</h3>
+          <p>Chat realtime giữa user, xác thực JWT, lưu lịch sử &amp; thread riêng.</p>
+          <div class="tags"><span>Golang</span><span>WebSocket</span><span>MySQL</span></div>
+          <a class="btn ghost" href="#" target="_blank" rel="noopener">Xem Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certs" class="container">
+    <h2 class="section-title">CHỨNG CHỈ – GIẢI THƯỞNG</h2>
+    <div class="certs-grid">
+      <div class="cert-card aos">
+        <h3>Next Level AI Skills with Gemini 2.5</h3>
+        <p>Udemy · Đang học</p>
+        <a class="btn ghost" href="#" target="_blank" rel="noopener">Xem khóa học</a>
+      </div>
+      <div class="cert-card aos">
+        <h3>Python Development & Data Science</h3>
+        <p>Udemy · Đang học</p>
+        <a class="btn ghost" href="#" target="_blank" rel="noopener">Xem khóa học</a>
+      </div>
+      <div class="cert-card aos">
+        <h3>Voice AI: ASR → Emotion → Cloning</h3>
+        <p>Udemy · Đang học</p>
+        <a class="btn ghost" href="#" target="_blank" rel="noopener">Xem khóa học</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container">
+    <h2 class="section-title">LIÊN HỆ</h2>
+    <div class="contact-grid">
+      <div class="card aos">
+        <p>Luôn sẵn sàng hợp tác trong các dự án thú vị, hoặc đơn giản chỉ để kết nối & học hỏi.</p>
+        <ul class="list">
+          <li>📧 ndinhphuong04@gmail.com</li>
+          <li>📞 +84 827 176 006</li>
+          <li>📍 TP. Hồ Chí Minh</li>
+        </ul>
+      </div>
+      <form class="card contact-form aos" onsubmit="event.preventDefault(); alert('Cảm ơn bạn!'); this.reset();">
+        <label>Họ tên<input required type="text"></label>
+        <label>Email<input required type="email"></label>
+        <label>Tin nhắn<textarea rows="5" required></textarea></label>
+        <button class="btn primary contact-btn" type="submit">Gửi</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      © 2025 Nguyễn Đình Phương — 22H1320005 - DL22CLC
+    </div>
+  </footer>
+
+  <!-- ================ SCRIPTS ================ -->
+  <script>
+  /* Progress bar */
+  (function(){
+    const bar=document.getElementById('scrollProgress');
+    const onScroll=()=>{
+      const h=document.documentElement;
+      const scrolled=h.scrollTop/(h.scrollHeight-h.clientHeight);
+      bar.style.width=(scrolled*100)+'%';
+    };
+    document.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  })();
+
+  /* Smooth scroll */
+  document.querySelectorAll('nav a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      e.preventDefault();
+      const t=document.querySelector(a.getAttribute('href'));
+      if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+
+  /* Active nav */
+  const navLinks=[...document.querySelectorAll('nav a[href^="#"]')];
+  const secs=[...document.querySelectorAll('section, .hero')];
+  const setActive=()=>{
+    const y=scrollY+120; let cur=secs[0]?.id;
+    secs.forEach(s=>{if((s.offsetTop||0)<=y) cur=s.id});
+    navLinks.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+cur));
+  };
+  document.addEventListener('scroll',setActive,{passive:true}); setActive();
+
+  /* Reveal on scroll */
+  const revealEls=[...document.querySelectorAll('.card, .project-card, .cert-card, .skill-card, .hero, section h2')];
+  revealEls.forEach(el=>el.classList.add('aos'));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('aos-show');io.unobserve(e.target)}}),{threshold:.15});
+  revealEls.forEach(el=>io.observe(el));
+
+  /* Typing effect */
+  (function(){
+    const el=document.getElementById('typing'); if(!el) return;
+    const words=JSON.parse(el.dataset.words || '[]'); let i=0, j=0, dir=1;
+    const tick=()=>{
+      const w=words[i]||''; j+=dir; el.textContent=w.slice(0,j);
+      if(j===w.length){ dir=-1; setTimeout(tick,1200); }
+      else if(j===0){ dir=1; i=(i+1)%words.length; setTimeout(tick,280); }
+      else setTimeout(tick, dir>0?55:40);
+    }; tick();
+  })();
+
+  /* Hero slider */
+  (function(){
+    const wrap=document.querySelector('.hero-slider'); if(!wrap) return;
+    const track=wrap.querySelector('.slides'); const slides=[...wrap.querySelectorAll('.slide')];
+    const prev=wrap.querySelector('.prev'); const next=wrap.querySelector('.next'); const dots=wrap.querySelector('.slider-dots');
+    let idx=0, autoplay=wrap.dataset.autoplay==="true", interval=+wrap.dataset.interval||4200, timer=null;
+    const renderDots=()=>{dots.innerHTML=''; slides.forEach((_,i)=>{const b=document.createElement('button'); b.className=i===idx?'active':''; b.onclick=()=>go(i); dots.appendChild(b);});};
+    const go=(n)=>{idx=(n+slides.length)%slides.length; track.style.transform=`translateX(${-idx*100}%)`; renderDots(); reset();}
+    const reset=()=>{if(!autoplay) return; clearInterval(timer); timer=setInterval(()=>go(idx+1),interval);}
+    prev.onclick=()=>go(idx-1); next.onclick=()=>go(idx+1); renderDots(); reset();
+  })();
+
+  /* Skills progress bars */
+  (function(){
+    const bars=[...document.querySelectorAll('.skill-bar')];
+    bars.forEach(b=>{
+      const level=+(b.dataset.level||0);
+      const fill=document.createElement('div'); fill.className='fill'; b.appendChild(fill);
+      const cap=document.createElement('div'); cap.className='cap'; cap.textContent=level+'%'; b.appendChild(cap);
+    });
+    const io2=new IntersectionObserver(es=>{
+      es.forEach(e=>{
+        if(!e.isIntersecting) return;
+        const bar=e.target; const level=+(bar.dataset.level||0);
+        bar.classList.add('show');
+        bar.querySelector('.fill').style.inset=`0 ${100-level}% 0 0`;
+        io2.unobserve(bar);
+      });
+    },{threshold:.35});
+    bars.forEach(b=>io2.observe(b));
+  })();
+
+  /* Subtle tilt on project cards */
+  (function(){
+    const prefer=matchMedia('(prefers-reduced-motion:no-preference)').matches;
+    if(!prefer) return;
+    document.querySelectorAll('.project-card').forEach(card=>{
+      const maxX=8,maxY=12,pers=700; let raf=null;
+      const apply=(rx,ry)=>card.style.transform=`perspective(${pers}px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      card.addEventListener('mousemove',e=>{
+        const r=card.getBoundingClientRect(), x=(e.clientX-r.left)/r.width, y=(e.clientY-r.top)/r.height;
+        const rx=(.5-y)*maxX, ry=(x-.5)*maxY; cancelAnimationFrame(raf); raf=requestAnimationFrame(()=>apply(rx,ry));
+      });
+      card.addEventListener('mouseleave',()=>{cancelAnimationFrame(raf); card.style.transform='';});
+    });
+  })();
+  </script>
+</body>
+</html>
